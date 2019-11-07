@@ -35,3 +35,18 @@ for (let i in passengers) {
 for (let passenger of passengers){
     console.log("Passager " + passenger + " embarqué");
 }
+
+//fonction pour calcuer une note moyenne
+
+const calculateAverageRating = (listeNotes) => {
+    let totalNotes = 0;
+    for (let note of listeNotes){
+      totalNotes += note;
+    }
+    if (listeNotes.length != 0) {
+    let average = totalNotes / listeNotes.length;
+    return average;
+    }
+    else {
+      return 0;
+    }
